@@ -19,6 +19,12 @@ function validateForm() {
     return false;
 }
 
+function scrollToContact() {
+    document.getElementById("contact").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
 function toggleDarkMode() {
     document.body.classList.toggle("dark");
     localStorage.setItem(
