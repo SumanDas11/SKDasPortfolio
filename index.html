@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suman Kumar Das | SDET | Playwright</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Suman<span>.</span></div>
+        <nav id="nav">
+            <a href="#home">Home</a>
+            <a href="#about">Profile</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="profile.jpg" alt="Suman Kumar Das">
+        <h1>Suman Kumar <span>Das</span></h1>
+        <p>Tech Lead | SDET | Playwright Automation</p>
+        <p class="sub">
+            10+ years in Test Automation, API Testing, CI/CD & Quality Engineering
+        </p>
+
+        <div class="hero-buttons">
+            <a href="resume.docx" download class="btn">Download Resume</a>
+            <button class="btn outline" onclick="toggleDarkMode()">Dark Mode</button>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>Professional Profile</h2>
+        <p>
+            Senior QA Automation professional with 10+ years of experience in
+            Playwright, Selenium, API testing and CI/CD pipelines.
+            Currently working as a <strong>Tech Lead at Tech Mahindra</strong>,
+            delivering end-to-end automation solutions for enterprise and product-based clients.
+        </p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <div class="grid">
+            <div>Playwright (TS / JS)</div>
+            <div>Selenium WebDriver</div>
+            <div>API Testing (Postman, REST Assured)</div>
+            <div>CI/CD (GitHub Actions)</div>
+            <div>TypeScript, JavaScript, Java</div>
+            <div>TestNG, POM, Hybrid Frameworks</div>
+            <div>Git, Jira, HP ALM, TFS</div>
+            <div>SQL, MongoDB</div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2>Work Experience</h2>
+
+        <div class="card">
+            <h3>Tech Mahindra – Tech Lead</h3>
+            <span>Mar 2025 – Oct 2025</span>
+            <p>
+                Led Playwright-based automation for Meta products including
+                AR Glasses and Smart Watch platforms.
+                Owned CI triage, defect classification and automation strategy.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>IBM – Consultant</h3>
+            <span>Nov 2021 – Nov 2023</span>
+            <p>
+                Automated functional and regression suites using Playwright.
+                Integrated CI pipelines using GitHub Actions and worked closely
+                with business stakeholders.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Siemens – Senior Software Test Engineer</h3>
+            <span>May 2018 – Nov 2021</span>
+            <p>
+                Selenium automation for TIA Portal, API testing,
+                framework setup and regression suite ownership.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Cognizant – Programmer Analyst</h3>
+            <span>Jun 2014 – May 2018</span>
+            <p>
+                Automation testing for Johnson & Johnson and Hartford Insurance
+                applications using Selenium and TestNG.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Key Projects</h2>
+
+        <div class="card">
+            <h3>Gauntlet Test Automation – Meta</h3>
+            <p>Playwright + TypeScript | CI Defect Triage</p>
+        </div>
+
+        <div class="card">
+            <h3>SIC Repo Enhancement – IBM</h3>
+            <p>Enterprise Playwright automation with GitHub Actions</p>
+        </div>
+
+        <div class="card">
+            <h3>TIA Portal – Siemens</h3>
+            <p>Selenium automation, API testing, framework setup</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: <strong>sumandas.aec@gmail.com</strong></p>
+        <p>Mobile: <strong>+91 99624 68894</strong></p>
+
+        <form onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Message"></textarea>
+            <button class="btn" type="submit">Send Message</button>
+            <p id="error"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Suman Kumar Das | SDET | Playwright</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
