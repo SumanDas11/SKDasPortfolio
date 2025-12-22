@@ -14,7 +14,8 @@ function validateForm() {
         return false;
     }
 
-    error.textContent = "Message sent successfully!";
+    // error.textContent = "Message sent successfully!";
+    error.textContent = "Please contact via email/phone. This functionality is under implementation!";
     error.style.color = "green";
     return false;
 }
