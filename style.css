@@ -86,8 +86,13 @@ nav a {
 
 /* SECTIONS */
 .section {
-    padding: 50px 20px;
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 50px 30px;
     text-align: center;
+    border-left: 2px;
+    border-right: 2px;
+    background: rgba(255, 255, 255, 0.45);
 }
 
 .grid {
@@ -159,6 +164,18 @@ body.dark {
 body.dark header,
 body.dark footer {
     background: #020617;
+}
+
+body.dark .section {
+    border-color: #2563eb;
+    background: rgba(2, 6, 23, 0.45);
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: calc(100% - 24px);
+        padding: 40px 18px;
+    }
 }
 
 body.dark .grid div,
