@@ -11,7 +11,6 @@
 <body>
 
     <header>
-        <div class="logo">Suman<span>.</span></div>
         <nav id="nav">
             <a href="#home">Home</a>
             <a href="#about">Profile</a>
@@ -20,32 +19,59 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
-        <div class="menu" onclick="toggleMenu()">☰</div>
+        <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle" type="button" onclick="toggleDarkMode()"
+                aria-label="Switch to dark mode">
+                <span id="theme-icon" aria-hidden="true">☾</span>
+                <span id="theme-label">Dark Mode</span>
+            </button>
+            <button class="menu" type="button" onclick="toggleMenu()" aria-label="Open navigation menu"
+                aria-controls="nav" aria-expanded="false">☰</button>
+        </div>
     </header>
 
     <section id="home" class="hero">
-        <img src="profile.jpg" alt="Suman Kumar Das">
-        <h1>Suman Kumar <span>Das</span></h1>
-        <p>Tech Lead | SDET | Playwright Automation</p>
-        <p class="sub">
-            10+ years in Test Automation, API Testing, CI/CD & Quality Engineering
-        </p>
-
-        <div class="hero-buttons">
-            <a href="SumanKumarDas-TechLead_SDET_PlaywrightTestAutomation-11Years.pdf" download class="btn">Download
-                Resume</a>
-            <button class="btn" onclick="scrollToContact()">Contact Me!</button>
-            <button class="btn outline" onclick="toggleDarkMode()">Dark Mode</button>
+        <div class="hero-content">
+            <p class="eyebrow">TECH LEAD / PRINCIPAL CONSULTANT / SDET / PLAYWRIGHT</p>
+            <h1>Building Reliable Software Through <span>Intelligent Test Automation.</span></h1>
+            <p class="hero-description">
+                Design scalable automation frameworks, API testing solutions,
+                and CI/CD quality pipelines that help teams release with confidence.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <button class="btn" type="button" onclick="scrollToContact()">Contact Me</button>
+                <a href="SumanKumarDas-TechLead_SDET_PlaywrightTestAutomation-11Years.pdf" download
+                    class="btn outline">Download Resume</a>
+            </div>
+            <div class="social-links">
+                <span>Find me online</span>
+                <a href="https://github.com/SumanDas11" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="image-frame">
+                <img src="profile.jpg" alt="Suman Kumar Das">
+            </div>
+            <p class="availability">Open to automation leadership opportunities</p>
         </div>
     </section>
 
     <section id="about" class="section">
         <h2>Professional Profile</h2>
         <p>
-            Senior QA Automation professional with 10+ years of experience in
-            Playwright, Selenium, API testing and CI/CD pipelines.
+            Tech Lead / Principal Consultant / SDET / Playwright Test Automation professional with 10.9+ years of
+            experience in Playwright, Selenium, API testing and CI/CD pipelines leveraging Generative AI capabilities,
+            including GitHub Copilot with AI Agents and Playwright MCP
+            Server, to accelerate test automation, improve engineering productivity, and enable smarter, AI-assisted
+            quality solutions.
+        </p>
+        <p>
             Currently working as a <strong>Tech Lead at Genpact</strong>,
-            delivering end-to-end automation solutions for enterprise and product-based clients.
+            delivering end-to-end automation solutions for enterprise and product-based clients. Passionate about modern
+            test engineering, automation architecture, and AI-driven quality transformation, I
+            focus on delivering solutions that are scalable, maintainable, reliable, and aligned with business
+            outcomes.
         </p>
     </section>
 
@@ -117,6 +143,11 @@
 
     <section id="projects" class="section">
         <h2>Key Projects</h2>
+
+        <div class="card">
+            <h3>AppBank Automation – Goldman Sachs</h3>
+            <p>Playwright + TypeScript | BDD | Copilot with AI Agents | GitLab</p>
+        </div>
 
         <div class="card">
             <h3>Gauntlet Test Automation – Meta</h3>
